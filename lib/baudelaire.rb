@@ -1,0 +1,2 @@
+module Baudelaire
+end
