@@ -23,6 +23,7 @@ GEM
     diff-lcs (1.2.5)
     i18n (0.6.11)
     multi_json (1.10.1)
+    rake (10.3.2)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
@@ -39,5 +40,6 @@ PLATFORMS
 
 DEPENDENCIES
   baudelaire!
+  rake
   rspec
   sqlite3
