@@ -1,6 +1,8 @@
 Baudelaire
 ======
 
+[![Build Status](https://secure.travis-ci.org/albertbellonch/baudelaire.png)](http://travis-ci.org/albertbellonch/baudelaire)
+
 Description
 -----------
 
