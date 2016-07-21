@@ -14,11 +14,23 @@ module Baudelaire
 
           define_method(:"#{field}") do
             value = self[field]
-            value = value.to_sym if value
-            value
+
+            if is_symbolizable?(value)
+              value = value.to_sym
+            else
+              nil
+            end
           end
         end
       end
+    end
+
+    private
+
+    def is_symbolizable?(value)
+      return false if value == :""
+
+      !value.nil?
     end
   end
 end

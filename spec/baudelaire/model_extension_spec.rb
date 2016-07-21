@@ -44,6 +44,14 @@ describe :symbolize do
       it "should return the symbolized string" do
         @tv_show.kind.should == :drama
       end
+
+      context "which is empty" do
+        before { @tv_show.kind = '' }
+
+        it "should return nil" do
+          @tv_show.kind.should be_nil
+        end
+      end
     end
 
     context "when being a symbol" do
