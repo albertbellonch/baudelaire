@@ -37,6 +37,18 @@ Then you will be able to do something like:
     tv_show.kind = 'drama'
     tv_show.kind # will return :drama
 
+Then you will be able to do something like:
+
+    tv_show = TvShow.new
+    tv_show.kind = 'drama'
+    tv_show.kind # will return :drama
+
+Also, from version 0.1.1, empty strings are exposed as nils:
+
+    tv_show = TvShow.new
+    tv_show.kind = ''
+    tv_show.kind # will return nil
+
 TODO
 ----
 
@@ -45,4 +57,5 @@ Do you have something in mind? Issue a PR! Bonus points for testing :)
 Changelog
 ---------
 
+* v.0.1.1 Now, empty strings are exposed as nils
 * v.0.1.0 Basic feature: getters and setters for symbolized attributes
