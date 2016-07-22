@@ -8,7 +8,7 @@ describe :symbolize do
       before { @tv_show.kind = nil }
 
       it "should save a nil" do
-        @tv_show[:kind].should be_nil
+        expect(@tv_show[:kind]).to be_nil
       end
     end
 
@@ -16,7 +16,7 @@ describe :symbolize do
       before { @tv_show.kind = 'drama' }
 
       it "should save a symbol" do
-        @tv_show[:kind].should == :drama
+        expect(@tv_show[:kind]).to eq(:drama)
       end
     end
 
@@ -24,7 +24,7 @@ describe :symbolize do
       before { @tv_show.kind = :drama }
 
       it "should save a symbol" do
-        @tv_show[:kind].should == :drama
+        expect(@tv_show[:kind]).to eq(:drama)
       end
     end
   end
@@ -34,7 +34,7 @@ describe :symbolize do
       before { @tv_show[:kind] = nil }
 
       it "should return nil" do
-        @tv_show.kind.should be_nil
+        expect(@tv_show.kind).to be_nil
       end
     end
 
@@ -42,14 +42,14 @@ describe :symbolize do
       before { @tv_show[:kind] = 'drama' }
 
       it "should return the symbolized string" do
-        @tv_show.kind.should == :drama
+        expect(@tv_show.kind).to eq(:drama)
       end
 
       context "which is empty" do
         before { @tv_show.kind = '' }
 
         it "should return nil" do
-          @tv_show.kind.should be_nil
+          expect(@tv_show.kind).to be_nil
         end
       end
     end
@@ -58,7 +58,7 @@ describe :symbolize do
       before { @tv_show[:kind] = :drama }
 
       it "should return the symbol" do
-        @tv_show.kind.should == :drama
+        expect(@tv_show.kind).to eq(:drama)
       end
     end
   end
