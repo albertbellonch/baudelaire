@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    baudelaire (0.1.1)
+    baudelaire (0.1.2)
       activerecord (~> 3)
 
 GEM

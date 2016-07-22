@@ -57,5 +57,6 @@ Do you have something in mind? Issue a PR! Bonus points for testing :)
 Changelog
 ---------
 
+* v.0.1.2 Fixed compatibility error with Active Record under version 4
 * v.0.1.1 Now, empty strings are exposed as nils
 * v.0.1.0 Basic feature: getters and setters for symbolized attributes
